@@ -8,7 +8,7 @@ export const TopBar = () => {
   return (
     <div className="topBarContainer flex items-center h-20 bg-blue-950">
       <div className="logo flex items-center text-orange-400 text-xl font-bold ml-10">
-        <img src={logo} alt="" className="w-20" />
+        <img src={logo} alt="" className="w-20 logo" />
         <p>EasyBuy</p>
       </div>
 
@@ -22,38 +22,44 @@ export const TopBar = () => {
         <option value="mouse">Mouse</option>
       </select>
       <form className="w-full">
-        <input className="search-bar h-10 rounded-3xl ml-7 w-full p-5" type="text" placeholder="Pesquisar..." />
+        <input
+          className="search-bar h-10 rounded-3xl ml-5 mr-2 w-full p-5"
+          type="text"
+          placeholder="Pesquisar..."
+        />
       </form>
       <span className="cursor-pointer">
         <BsSearch />
       </span>
 
-      <ul className="flex mr-10">
-        <li>
-          <a
-            className="flex items-center gap-1 ml-10 text-xl text-white"
-            href=""
-          >
-            Favoritos <FcLike />
-          </a>
-        </li>
-        <li>
-          <a
-            className="flex items-center gap-1 ml-10 text-xl text-white"
-            href=""
-          >
-            Carrinho <AiOutlineShoppingCart />
-          </a>
-        </li>
-        <li>
-          <a
-            className="flex items-center gap-1 ml-10 text-xl text-white"
-            href=""
-          >
-            Conta <BiUser />
-          </a>
-        </li>
-      </ul>
+      <div className="links-wrapper hidden lg:block">
+        <ul className="flex mr-10">
+          <li>
+            <a
+              className="flex items-center gap-1 ml-10 text-xl text-white"
+              href=""
+            >
+              Favoritos <FcLike />
+            </a>
+          </li>
+          <li>
+            <a
+              className="flex items-center gap-1 ml-10 text-xl text-white"
+              href=""
+            >
+              Carrinho <AiOutlineShoppingCart />
+            </a>
+          </li>
+          <li>
+            <a
+              className="flex items-center gap-1 ml-10 text-xl text-white"
+              href=""
+            >
+              Conta <BiUser />
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
