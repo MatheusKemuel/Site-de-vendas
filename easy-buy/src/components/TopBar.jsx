@@ -2,7 +2,7 @@ import { FcLike } from "react-icons/fc";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { BiUser } from "react-icons/bi";
 import { BsSearch } from "react-icons/bs";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logo1.jpeg";
 
 export const TopBar = () => {
   return (

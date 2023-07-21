@@ -5,7 +5,7 @@ import estrelaContorno from "../../assets/images/contorno-de-estrela.png"
 
 export const Card = () => {
   return (
-    <div className="card h-96 w-80 ">
+    <div className="card h-96 w-80">
       <div className="card-img w-80 m-auto">
         <img src={placeholder} alt="" className=" rounded-xl" />
       </div>
