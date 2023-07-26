@@ -173,12 +173,14 @@ body {
   }
 }
 
+
+
 @media (max-width: 1024px) {
-  .products-section {
-    display: grid;
-    grid-column: 2;
+  .form-search {
+    margin-left: 10px;
   }
 }
+
 
 /*===================*/
 /* BOB
@@ -266,5 +268,40 @@ body {
   border-radius: 40px;
 }
 
+/*/////////*/
+
+@media (max-width: 1023px) {
+  .c1 {
+    order: 1;
+  }
+
+  .c2 {
+    order: 3;
+  }
+
+  .c3 {
+    order: 2;
+  }
+
+  .footer-container {
+    padding: 32px;
+  }
+  
+}
+
+.socials a {
+  width: 50px;
+}
+
+.footer-container {
+  gap: 50px;
+}
+
+@media (max-width: 640px) {
+  .footer-container {
+    gap: 50px;
+    padding: 32px;
+  }
+}
 
 
