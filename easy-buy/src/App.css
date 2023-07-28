@@ -37,7 +37,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: .7rem;
+  width: 0.7rem;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -76,7 +76,6 @@ body {
     margin-left: -30px;
   }
 }
-
 
 .dest-img-slide img {
   width: 37rem;
@@ -173,14 +172,11 @@ body {
   }
 }
 
-
-
 @media (max-width: 1024px) {
   .form-search {
     margin-left: 10px;
   }
 }
-
 
 /*===================*/
 /* BOB
@@ -188,49 +184,49 @@ body {
 
 @-webkit-keyframes bob-on-hover {
   0% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
   }
 
   50% {
-      -webkit-transform: translateY(-4px);
-      transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
   }
 
   100% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
   }
 }
 
 @keyframes bob-on-hover {
   0% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
   }
 
   50% {
-      -webkit-transform: translateY(-4px);
-      transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
   }
 
   100% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
   }
 }
 
 @-webkit-keyframes bob-on-hover-float {
   100% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
   }
 }
 
 @keyframes bob-on-hover-float {
   100% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
   }
 }
 
@@ -247,10 +243,10 @@ body {
 .bob-on-hover:active {
   -webkit-animation-name: bob-on-hover-float, bob-on-hover;
   animation-name: bob-on-hover-float, bob-on-hover;
-  -webkit-animation-duration: .3s, 1.5s;
-  animation-duration: .3s, 1.5s;
-  -webkit-animation-delay: 0s, .3s;
-  animation-delay: 0s, .3s;
+  -webkit-animation-duration: 0.3s, 1.5s;
+  animation-duration: 0.3s, 1.5s;
+  -webkit-animation-delay: 0s, 0.3s;
+  animation-delay: 0s, 0.3s;
   -webkit-animation-timing-function: ease-out, ease-in-out;
   animation-timing-function: ease-out, ease-in-out;
   -webkit-animation-iteration-count: 1, infinite;
@@ -260,7 +256,6 @@ body {
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
 }
-
 
 /*Categories*/
 
@@ -286,7 +281,6 @@ body {
   .footer-container {
     padding: 32px;
   }
-  
 }
 
 .socials a {
@@ -304,4 +298,26 @@ body {
   }
 }
 
+.favorite-container {
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.btn-fav {
+  width: 200px;
+  height: 60px;
+}
+
+@media (max-width: 1300px) {
+  .btn-fav {
+    width: 150px;
+  }
+}
+@media (max-width: 458px) {
+  .coracaoCardFav {
+    position:fixed;
+    width: 100px;
+  }
+}
 

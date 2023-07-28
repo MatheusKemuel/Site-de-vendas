@@ -24,7 +24,7 @@ export const Destaques = () => {
       <h2 className="mt-24 font-bold text-5xl text-blue-950 flex justify-center">
         Destaques
       </h2>
-      <div>
+      <div className="m-auto">
         <Swiper
           effect={"coverflow"}
           grabCursor={true}

@@ -2,7 +2,7 @@ import CardCategory from "./cards/CardCategory";
 
 export const BuyPerCatergory = () => {
   return (
-    <section className="mt-32">
+    <section className="mt-32 mb-44">
       <div className="flex justify-center items-center">
         <h2 className="text-5xl font-bold text-blue-950 text-center">
           Compre por categoria

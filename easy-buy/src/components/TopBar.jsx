@@ -5,6 +5,7 @@ import { BiUser } from "react-icons/bi";
 import logo from "../assets/images/logo1.jpeg";
 import { useState } from "react";
 
+
 export const TopBar = () => {
   let [open, setOpen] = useState(false);
 
