@@ -24,8 +24,6 @@ export const Slide = () => {
           modules={[Navigation, Pagination, Keyboard, Autoplay]}
           spaceBetween={50}
           slidesPerView={1}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
           autoplay={{
             delay: 5000,
             disableOnInteraction: false,

@@ -4,7 +4,8 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { BiUser } from "react-icons/bi";
 import logo from "../assets/images/logo1.jpeg";
 import { useState } from "react";
-
+import SearchBar from "./topbar/SearchBar";
+import { useNavigate } from "react-router-dom"
 
 export const TopBar = () => {
   let [open, setOpen] = useState(false);
@@ -12,12 +13,11 @@ export const TopBar = () => {
   return (
     <>
       <div className="topBarContainer flex items-center justify-between h-20 bg-blue-950">
-        <Link
-        to="/">
-        <div className="logo flex items-center text-orange-400 text-xl font-bold ml-10">
-          <img src={logo} alt="" className="w-20 logo" />
-          <p>EasyBuy</p>
-        </div>
+        <Link to="/">
+          <div className="logo flex items-center text-orange-400 text-xl font-bold ml-10">
+            <img src={logo} alt="" className="w-20 logo" />
+            <p>EasyBuy</p>
+          </div>
         </Link>
 
         <select
@@ -30,13 +30,7 @@ export const TopBar = () => {
           <option value="mouse">Mouse</option>
         </select>
 
-        <form className="w-1/2 form-search hidden lg:block">
-          <input
-            className="search-bar h-10 rounded-3xl ml-auto mr-2 w-full p-5 "
-            type="text"
-            placeholder="Pesquisar..."
-          />
-        </form>
+        <SearchBar />
 
         <div className="links-wrapper hidden lg:block">
           <ul className="flex mr-10">
@@ -55,7 +49,10 @@ export const TopBar = () => {
                 className="flex items-center gap-1 ml-10 text-xl text-white"
                 href=""
               >
-                <p className="">Carrinho</p> <AiOutlineShoppingCart />
+                <div className="flex items-center justify-center relative">
+                  <p className="">Carrinho</p> <AiOutlineShoppingCart />
+                  <span className="absolute bg-red-500 w-5 h-5 text-xs flex items-center justify-center rounded-full -right-4 top-0">9</span>
+                </div>
               </Link>
             </li>
             <li>
@@ -85,17 +82,29 @@ export const TopBar = () => {
       >
         <ul className="lg:hidden flex flex-col gap-2">
           <li className="hover:bg-blue-900">
-            <Link to="/favorites" className="flex items-center gap-3 text-xl text-white" href="">
+            <Link
+              to="/favorites"
+              className="flex items-center gap-3 text-xl text-white"
+              href=""
+            >
               <p className="">Favoritos</p> <FcLike />
             </Link>
           </li>
           <li className="hover:bg-blue-900">
-            <Link to="/cart" className="flex items-center gap-3 text-xl text-white" href="">
+            <Link
+              to="/cart"
+              className="flex items-center gap-3 text-xl text-white"
+              href=""
+            >
               <p className="">Carrinho</p> <AiOutlineShoppingCart />
             </Link>
           </li>
           <li className="hover:bg-blue-900 flex ">
-            <Link to="/account" className="flex items-center gap-3 text-xl text-white" href="">
+            <Link
+              to="/account"
+              className="flex items-center gap-3 text-xl text-white"
+              href=""
+            >
               <p className="">Conta</p> <BiUser />
             </Link>
           </li>

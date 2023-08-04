@@ -2,7 +2,6 @@ import insta from "../assets/images/instagram.png";
 import face from "../assets/images/facebook.png";
 import github from "../assets/images/github.png";
 import lnkdn from "../assets/images/linkedin.png";
-import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (

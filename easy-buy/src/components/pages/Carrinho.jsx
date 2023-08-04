@@ -1,7 +1,7 @@
 export const Carrinho = () => {
     return(
         <>
-            <section className="h-screen">Carrinho</section>
+            <section>Carrinho</section>
         </>
     )
 }
